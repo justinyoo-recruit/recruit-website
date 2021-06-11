@@ -16,12 +16,26 @@
         tr:nth-child(odd) {
             background-color: #fff;
         }
+        .container {
+          &__image {
+            width: 250px;
+            float: left;
+          }
+          &__text {
+            display: inline;
+          }
+        }
     </style>
 </head>
 <body>
     <center>
-        <h1>
-        <img style="width: 10%; padding-right:100px" src="Justin Webpage.jpg" alt="Justin Yoo"/>Justin Yoo<br/><h2>Class of 2023</h2></h1>
+        <div class="container">
+            <img class = "container__image" style="width: 10%; padding-right:100px" src="Justin Webpage.jpg" alt="Justin Yoo"/>
+            <div class = "container__text">
+                <h1>Justin Yoo</h1>
+                <h2>Class of 2023</h2>
+            </div>
+        </div>
     <br/>
     <br/>
     <br/>
